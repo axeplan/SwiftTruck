@@ -1,0 +1,100 @@
+{
+	"_type": "Project",
+	"_id": "AAAAAAFF+h6SjaM2Hec=",
+	"name": "SwiftTruckSuite",
+	"ownedElements": [
+		{
+			"_type": "UMLModel",
+			"_id": "AAAAAAFF+qBWK6M3Z8Y=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "SwiftTruckModel",
+			"ownedElements": [
+				{
+					"_type": "UMLClassDiagram",
+					"_id": "AAAAAAFF+qBtyKM79qY=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "SwiftTruckMain",
+					"visible": true,
+					"defaultDiagram": true
+				},
+				{
+					"_type": "UMLActivity",
+					"_id": "AAAAAAFYX2/xcILIlgg=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "SwiftTruckMainActivity",
+					"ownedElements": [
+						{
+							"_type": "UMLActivityDiagram",
+							"_id": "AAAAAAFYX2/xcILJKfI=",
+							"_parent": {
+								"$ref": "AAAAAAFYX2/xcILIlgg="
+							},
+							"name": "SwiftTruckMainActivity",
+							"visible": true,
+							"defaultDiagram": false
+						}
+					],
+					"visibility": "public",
+					"isReentrant": true,
+					"isReadOnly": false,
+					"isSingleExecution": false
+				},
+				{
+					"_type": "UMLActivity",
+					"_id": "AAAAAAFYX3CeLYLR5YI=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "SwiftTruckLBS",
+					"ownedElements": [
+						{
+							"_type": "UMLActivityDiagram",
+							"_id": "AAAAAAFYX3CeLYLSLzQ=",
+							"_parent": {
+								"$ref": "AAAAAAFYX3CeLYLR5YI="
+							},
+							"name": "SwiftTruckLBS",
+							"visible": true,
+							"defaultDiagram": false
+						}
+					],
+					"visibility": "public",
+					"isReentrant": true,
+					"isReadOnly": false,
+					"isSingleExecution": false
+				},
+				{
+					"_type": "UMLActivity",
+					"_id": "AAAAAAFYX3EgGYLY/uo=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "SwiftTruckDataBase",
+					"ownedElements": [
+						{
+							"_type": "UMLActivityDiagram",
+							"_id": "AAAAAAFYX3EgGYLZobE=",
+							"_parent": {
+								"$ref": "AAAAAAFYX3EgGYLY/uo="
+							},
+							"name": "SwiftTruckDataBase",
+							"visible": true,
+							"defaultDiagram": false
+						}
+					],
+					"visibility": "public",
+					"isReentrant": true,
+					"isReadOnly": false,
+					"isSingleExecution": false
+				}
+			],
+			"visibility": "public"
+		}
+	]
+}

@@ -1,0 +1,3 @@
+
+
+SQL-lite - store information

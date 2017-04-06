@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorLightWhite">#FAFAFA</color>
+    <color name="colorDarkSilver">#E0E0E0</color>
+
+    <color name="colorLightBrown">#8D6E63</color>
+    <color name="colorMediumBrown">#795548</color>
+    <color name="colorDarkBrown">#6D4C41</color>
+
+    <color name="colorLightYellowCream">#FFECB3</color>
+    <color name="colorMediumYellowCream">#FFF9C4</color>
+    <color name="colorDarkYellowCream">#FFF59D</color>
+
+
+    <color name="colorLightBlueCream">#BBDEFB</color>
+    <color name="colorMediumBlueCream">#4FC3F7</color>
+    <color name="colorDarkBlueCream">#29B6F6</color>
+
+    <color name="colorAquaBlue">#00838F</color>
+
+    <color name="colorRed">#FF0000</color>
+    <color name="colorLightPink">#FFB6C1</color>
+    <color name="colorGreen">#2E8B57</color>
+    <color name="colorLightGreen">#00FF00</color>
+</resources>
+
+<!--
+
+<color name="colorOrangeCream">#FFE0B2</color>
+
+<color name="colorLightBrown">#8D6E63</color>
+<color name="colorLightBrown">#795548</color>
+<color name="colorLightBrown">#6D4C41</color>
+
+<color name="colorYellowCream">#FFECB3</color>
+<color name="colorYellowCream">#FFF9C4</color>
+<color name="colorYellowCream">#FFF59D</color>
+
+-->

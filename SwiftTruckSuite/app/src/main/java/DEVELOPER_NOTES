@@ -1,0 +1,19 @@
+elkgrove.swifttruck. [core]
+
+elkgrove.swifttruck.adapters
+
+elkgrove.swifttruck.database
+
+elkgrove.swifttruck.loginscreen
+
+elkgrove.swifttruck.maps
+
+elkgrove.swifttruck.tabs
+
+res/drawable
+
+res/layout
+
+res/menu
+
+res/values

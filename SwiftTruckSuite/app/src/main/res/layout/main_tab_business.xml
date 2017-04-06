@@ -1,0 +1,176 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mtb_relative_layout_1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:paddingTop="16dp"
+    android:background="@color/colorLightBlueCream"
+    tools:context="elkgrove.swifttruck.tabs.MainTabBusiness">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@drawable/rounded_relative_layout">
+
+        <!-- logo -->
+        <TextView
+            android:id="@+id/logo_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:fontFamily="cursive"
+            android:text="SwiftTruck"
+            android:textSize="45dp"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/white" />
+
+        <!-- logo image -->
+        <ImageView
+            android:id="@+id/logo_img"
+            android:src="@mipmap/swift_truck_ic_launcher"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="7dp"
+            android:layout_below="@+id/logo_tv" />
+
+        <!-- divider -->
+        <View
+            android:id="@+id/logo_divider_credentials"
+            android:layout_width="fill_parent"
+            android:layout_height="25dp"
+            android:layout_gravity="start"
+            android:layout_below="@+id/logo_img"
+            android:background="@android:color/transparent"/>
+
+        <!-- username -->
+        <EditText
+            android:id="@+id/username_et"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_below="@+id/logo_divider_credentials"
+            android:hint="username"
+            android:textColorHint="@android:color/white"
+            android:background="@drawable/business_custom_etline"/>
+
+        <!-- divider -->
+        <View
+            android:id="@+id/credentials_divider_buttons"
+            android:layout_width="fill_parent"
+            android:layout_height="7dp"
+            android:layout_gravity="start"
+            android:layout_below="@+id/username_et"
+            android:background="@android:color/transparent"/>
+
+        <!-- password -->
+        <EditText
+            android:id="@+id/password_et"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_below="@+id/credentials_divider_buttons"
+            android:hint="password"
+            android:textColorHint="@android:color/white"
+            android:background="@drawable/business_custom_etline"/>
+
+        <!-- divider -->
+        <View
+            android:id="@+id/buttons_divider_buttons"
+            android:layout_width="fill_parent"
+            android:layout_height="10dp"
+            android:layout_gravity="start"
+            android:layout_below="@+id/password_et"
+            android:background="@android:color/transparent"/>
+
+        <!-- log in button -->
+        <Button
+            android:id="@+id/logInBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:gravity="start"
+            android:layout_below="@id/buttons_divider_buttons"
+            android:text="@string/login_label"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textAlignment="center"
+            android:background="@drawable/business_login_button"
+            style="@style/loginButtonText" />
+
+        <!-- divider -->
+        <View
+            android:id="@+id/login_divider_signup"
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:layout_gravity="start"
+            android:layout_below="@+id/logInBtn"
+            android:background="@android:color/transparent"/>
+
+        <!-- sign up button -->
+        <Button
+            android:id="@+id/signUpBtn"
+            android:layout_width="75dp"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:layout_below="@+id/login_divider_signup"
+            android:layout_centerInParent="true"
+            android:text="@string/singup_label"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:background="@drawable/business_signup_button"
+            style="@style/signupButtonText" />
+    </RelativeLayout>
+</RelativeLayout>
+
+    <!-- grid layout example
+    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main_tab_center_grid_layout_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="5"
+        android:rowCount="5"
+        android:orientation="horizontal"
+        android:background="@color/papayawhip">
+
+        <Button
+            android:id="@+id/btn_1"
+            android:layout_rowSpan="1"
+            android:layout_columnSpan="5"
+            android:layout_gravity="fill_horizontal"
+            android:text="btn_1" />
+
+        <Space
+            android:id="@+id/space_1"
+            android:layout_rowSpan="2"
+            android:layout_columnSpan="5"
+            android:layout_gravity="fill_horizontal" />
+
+        <Button
+            android:id="@+id/btn_2"
+            android:layout_rowSpan="3"
+            android:layout_columnSpan="5"
+            android:layout_gravity="fill_horizontal"
+            android:text="btn_2" />
+
+        <Space
+            android:id="@+id/space_2"
+            android:layout_rowSpan="4"
+            android:layout_columnSpan="5"
+            android:layout_gravity="fill_horizontal" />
+
+        <Button
+            android:id="@+id/btn_3"
+            android:layout_rowSpan="3"
+            android:layout_columnSpan="5"
+            android:layout_gravity="fill_horizontal"
+            android:text="btn_3" />
+    </GridLayout>
+    -->

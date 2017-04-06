@@ -23,6 +23,8 @@ public class MapLoader extends Fragment implements OnMapReadyCallback
                                                 , ActivityCompat.OnRequestPermissionsResultCallback {
     private View rootView;
 
+    /* Override for Fragment */
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,17 +40,6 @@ public class MapLoader extends Fragment implements OnMapReadyCallback
     }
 
     @Override
-    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
-        switch (requestCode) {
-            case 200: {
-                if(grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                    //TODO: do stuff after permissions were granted after on request
-                }
-            }
-        }
-    }
-
-    @Override
     public View onCreateView(final LayoutInflater inflater, final ViewGroup container,
                              Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,10 +50,28 @@ public class MapLoader extends Fragment implements OnMapReadyCallback
         return rootView;
     }
 
+    /* Override for OnRequestPermissionsResultCallback */
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        switch (requestCode) {
+            case 200: {
+                if(grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                    //TODO: do stuff after permissions were granted after on request
+                }
+            }
+        }
+    }
+
+    /* Override for OnMapReadyCallback */
+
     @Override
     public void onMapReady(GoogleMap map) {
         //TODO: add details from database, so trucks can be displayed based on user selection
-        LatLng SacState_ParkingLot_5 = new LatLng(38.558779, -121.422269); //TRUCK_DETAILS_FROM_DB
+        //TODO: Sac State location will switch with current location of user phone
+        //TODO: Target Location will switch with current location of truck (read from database)
+        LatLng SacState_ParkingLot_5 = new LatLng(38.558779, -121.422269); //USER_CURRENT_LOCATION
+        LatLng TARGET_LOCATION = new LatLng(40.558779, -119.422269); //TRUCK_DETAILS_FROM_DB
 
         if (ActivityCompat.checkSelfPermission(getActivity()
                 , Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED
@@ -73,9 +82,18 @@ public class MapLoader extends Fragment implements OnMapReadyCallback
 
         map.setMyLocationEnabled(true);
         map.moveCamera(CameraUpdateFactory.newLatLngZoom(SacState_ParkingLot_5, 13));
+
+        //add user marker
         map.addMarker(new MarkerOptions()
-                .title("Sac State") //TRUCK_NAME
-                .snippet("Sac State Parking Lot 5") //TRUCK_DESCRIPTION
-                .position(SacState_ParkingLot_5)); //TRUCK_POSITION
+                .title("Sac State") //USER_NAME
+                .snippet("Sac State Parking Lot 5") //USER_DESCRIPTION
+                .position(SacState_ParkingLot_5)); //USER_POSITION
+        //add target marker
+        map.addMarker(new MarkerOptions()
+                .title("TARGET") //TARGET_NAME
+                .snippet("TARGET LOCATION") //TARGET_LOCATION
+                .position(TARGET_LOCATION)); //TARGET_LOCATION
+        //add blue route
+
     }
 }
